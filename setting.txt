@@ -1,0 +1,49 @@
+#The file or directory is corrupted and unreadable. di usb
+buka cmd as administrator
+chkdsk /f f: ( nama )drive usb
+
+#Menghapus Semua Tile & All Apps Start Menu
+Pertama buka Windows RUN (WinKey + R), lalu 
+ketikan %ProgramData%\Microsoft\Windows\Start Menu\Programs
+
+#command cmd pada waktu install ulang
+tekan SHIFT + F10
+wpeutil reboot
+wpeutil shutdown
+
+# setting python di git bash
+on the root ~ atau /user/hadi
+touch .bashrc
+subl . # buka dengan sublime-text3
+ketik:   alias python='winpty python.exe'
+
+
+#virtual env di windows
+python -m venv Env
+
+# activate env
+#CMD
+Env\Scripts\activate
+deactivate
+
+#GIT BASH
+cd Env
+cd Scripts
+. activate
+deactivate
+
+# install pip dari requirements.txt
+pip install -r requirements.txt
+
+# kill port
+netstat -ano | findstr :5000
+taskkill /PID typeyourPIDhere /F
+
+# setting vscode json
+{
+    "explorer.openEditors.visible": 0,
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 15,
+    "editor.lineHeight":30
+}

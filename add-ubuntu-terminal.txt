@@ -1,0 +1,9 @@
+{
+      "guid": "{7b855bd4-a9a3-443f-baac-c9b70ffa4aad}",
+      "hidden": false,
+      "name": "Ubuntu",
+      "commandline":"wsl.exe -d Ubuntu",
+      // "startingDirectory":"%USERPROFILE%",
+      "startingDirectory":"/home/hadi",
+      "icon":"C:\\Users\\hadi\\Pictures\\ubuntu\\ubuntu2.png"
+  },

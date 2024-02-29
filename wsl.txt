@@ -1,0 +1,14 @@
+sudo adduser username
+
+
+
+#default user
+tambahkan di /etc/wsl.conf
+
+[user]
+default=hadi
+
+
+# daftar menjadi sudoers
+wsl -u root
+usermod -aG sudo username

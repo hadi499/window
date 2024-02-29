@@ -1,0 +1,11 @@
+----windows cannot format the volume is offline-----
+
+diskpart
+select disk
+select disk 1 [usb]
+list partition
+select partition 1
+clean
+create partition primary
+delete partition override
+exit

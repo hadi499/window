@@ -1,0 +1,5 @@
+Clear-Host
+Import-Module oh-my-posh
+Import-Module -Name Terminal-Icons
+
+oh-my-posh --init --shell pwsh --config $env:POSH_THEMES_PATH/agnosterplus.omp.json | Invoke-Expression

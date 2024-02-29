@@ -1,0 +1,6 @@
+#### activate virtual env
+cd Env/Scripts
+. activate
+atau
+ . env/Scripts/activate
+
